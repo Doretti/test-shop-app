@@ -184,7 +184,6 @@ button.header-profile__button {
 
 .slider__content {
     display: flex;
-    width: 100vw;
     position: relative;
     height: 200px;
     justify-content: center;
@@ -263,8 +262,19 @@ button.header-profile__button {
     align-items: center;
 
     background-color: #fff;
-    border: 4px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    transition-property: transform color;
+    transition-duration: .2s;
 }
+
+.card__item:hover {
+    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+    transform: translate3d(1px, 1px, 0);
+
+}
+
+
 
 .card__image {
     display: block;
@@ -380,7 +390,7 @@ button.header-profile__button {
 
 
 
-.card__title {
+.card-title {
     color: #414141;
     font-size: 36px;
     font-weight: 700;
@@ -405,12 +415,21 @@ button.header-profile__button {
     cursor: pointer;
 }
 
+.card__btn-buy:hover {
+    background: #FF6633;
+    color: #FFFFFF;
+    border: none;
+
+}
+
 .card__discription {
     margin-top: 8px;
     margin-bottom: 8px;
     font-size: 16px;
     line-height: 24px;
     width: 256px;
+
+    color: #414141;
 
 }
 
@@ -427,3 +446,102 @@ button.header-profile__button {
     border-radius: 4px;
     color: #70C05B;
 }
+
+
+/* New */
+
+.new__card {
+    padding-top: 0;
+}
+
+.new-card__card-top {
+    margin-bottom: 26px;
+}
+
+/* bought-before */
+
+.bought-before_card {
+    padding-top: 0;
+
+
+}
+
+.bought-before__card-top {
+    margin-bottom: 26px;
+}
+
+/* Special Offers */
+
+.special-offers {
+    padding-bottom: 120px;
+}
+
+
+.special-offers__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 40px
+
+
+}
+
+.special-offers__card {
+    border-radius: 4px;
+    width:  584px;
+    height: 200px;
+
+    padding: 8px 40px 8px 30px;
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0px 8px 16px rgba(202, 147, 96, 0.5);
+    cursor: pointer;
+
+}
+
+.special-offers__card--left {
+    background-color: #FCD5BA;
+
+}
+
+.special-offers__card--right {
+    background-color: #E5FFDE;
+    position: relative;
+}
+
+.special-offers-img--size {
+    position: absolute;
+    
+    top: 12px;
+    right: 12px;
+    z-index: 1;
+
+   
+}
+
+.special-offers__content {
+    margin-right: 24px;
+}
+
+.special-offers__card-title {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    max-width: 258px;
+    height: 100%;
+
+    color: #414141;
+}
+
+.special-offers__card-description {
+    color: #414141;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 6px;
+
+    max-width: 248px;
+}
+
