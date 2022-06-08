@@ -545,3 +545,50 @@ button.header-profile__button {
     max-width: 248px;
 }
 
+/* Shop */
+
+.shop {
+    padding-bottom: 120px;
+}
+
+.shop__title {
+    padding-bottom: 40px;
+    line-height: 54px;
+}
+
+.shop-nav {
+    padding: 0 0 24px;
+}
+
+.shop__btn-list {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.shop__btn-item {
+    margin-right: 24px;
+}
+
+
+.shop-btn {
+    width: 97px;
+    height: 32px;
+    padding: 4px 8px;
+    
+    color: #606060;
+    background-color: #F3F2F1;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color, background-color .2s linear;
+    
+    /* transition-property: color, background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out; */
+}
+
+.shop-btn:hover {
+    background-color:#70C05B;
+    color: #FFFFFF;
+}
