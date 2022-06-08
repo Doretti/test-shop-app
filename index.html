@@ -882,7 +882,73 @@
         </div>
     </section>
 
+    <section class="shop">
+        <div class="container">
+            <h2 class="card-title shop__title">
+                Наши магазины
+            </h2>
+            <nav class="shop-nav">
+                <ul class="shop__btn-list">
+                    <li class="shop__btn-item">
+                        <button class="shop-btn">
+                            п.Щельяюр
+                        </button>
+                    </li>
 
+                    <li class="shop__btn-item">
+                        <button class="shop-btn">
+                            д.Вертеп
+                        </button>
+                    </li>
+
+                    <li class="shop__btn-item">
+                        <button class="shop-btn">
+                            с.Краснобор
+                        </button>
+                    </li>
+
+                    <li class="shop__btn-item">
+                        <button class="shop-btn">
+                            д.Диюр
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="map" style="width: 1208px; height: 354px" id="map">
+
+            </div>
+        </div>
+
+
+
+
+
+
+        </div>
+        </div>
+    </section>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        // Функция ymaps.ready() будет вызвана, когда
+        // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+        ymaps.ready(init);
+        function init() {
+            // Создание карты.
+            var myMap = new ymaps.Map("map", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [55.76, 37.64],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 7
+            });
+        }
+    </script>
 </body>
 
 </html>
